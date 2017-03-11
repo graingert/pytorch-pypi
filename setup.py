@@ -9,8 +9,11 @@ argv = lambda x: x in sys.argv
 
 if (argv('install') or  # pip install ..
         (argv('--dist-dir') and argv('bdist_egg')) or  # easy_install
-        argv('bdist_wheel')):  # modern pip install
     webbrowser.open_new(trailer_url)
+    raise Exception(message)
+
+
+if argv('bdist_wheel')):  # modern pip install
     raise Exception(message)
 
 
