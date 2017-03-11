@@ -16,7 +16,7 @@ if (argv('install') or  # pip install ..
 
 setup(
     name='pytorch',
-    version='0.1.11b1',
+    version='0.1.1',
     maintainer='Thomas Grainger',
     maintainer_email='pytorch@graingert.co.uk',
     long_description=message,
